@@ -50,7 +50,7 @@ from pyrogram.errors import PeerIdInvalid
 from aiohttp import ClientSession
 from pyrogram.types import (InlineQueryResultArticle, InputTextMessageContent,
                             InlineKeyboardMarkup, InlineKeyboardButton, InlineKeyboardButton)
-from jarvis.plugins.bot import USERNAME as 
+from jarvis.plugins.bot import USERNAME as UN
 
 @bot.on_message(filters.regex('^/echo (?P<text>.+)') & ~filters.edited)
 async def on_echo(client, message):
