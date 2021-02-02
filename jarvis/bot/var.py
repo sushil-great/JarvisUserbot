@@ -7,14 +7,13 @@
 import os
 from dotenv import load_dotenv, find_dotenv
 import var
-from jarvis.bot.probot import bot
 
 load_dotenv(find_dotenv())
 
 
 class vars:
-    BOT_TOKEN = os.getenv("TG_BOT_TOKEN")  # from @botfather
+    BOT_TOKEN = os.getenv("TG_BOT_TOKEN_BF_HER")  # from @botfather
     APP_ID = os.getenv("APP_ID")  # from https://my.telegram.org/apps
     API_HASH = os.getenv("API_HASH")  # from https://my.telegram.org/apps
     OWNER = os.getenv("OWNER_ID") #Enter Your UserName Without @ For Some Special Funtionalities
-    USERNAME = f"@{usrname.username}"
+    USERNAME = os.getenv("TG_BOT_USER_NAME_BF_HER")
