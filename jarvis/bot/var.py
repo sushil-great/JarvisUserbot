@@ -7,7 +7,7 @@
 import os
 from dotenv import load_dotenv, find_dotenv
 import var
-from probot import bot
+from jarvis.bot.probot import bot
 
 load_dotenv(find_dotenv())
 
