@@ -7,6 +7,8 @@
 import os
 from dotenv import load_dotenv, find_dotenv
 import var
+from probot import bot
+
 load_dotenv(find_dotenv())
 
 
@@ -15,4 +17,4 @@ class vars:
     APP_ID = os.getenv("APP_ID")  # from https://my.telegram.org/apps
     API_HASH = os.getenv("API_HASH")  # from https://my.telegram.org/apps
     OWNER = os.getenv("OWNER_ID") #Enter Your UserName Without @ For Some Special Funtionalities
-    USERNAME = os.getenv("USERNAME")
+    USERNAME = f"@{usrname.username}"
