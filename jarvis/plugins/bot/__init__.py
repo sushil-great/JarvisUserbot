@@ -11,7 +11,7 @@ license = "Licensed Under GNU AFFERO GENERAL PUBLIC LICENSE (AGPL - 3.0)"
 
 
 from pyrogram import Client
-from jarvis.bot.var import vars
+from jarvis.plugins.bot.var import vars
 from pyrogram.errors.exceptions.bad_request_400 import BadRequest
 import logging
 logging.basicConfig(

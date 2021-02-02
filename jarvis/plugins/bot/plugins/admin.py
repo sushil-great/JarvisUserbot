@@ -35,9 +35,9 @@ Will Add More Commands Soon
 import asyncio
 from pyrogram import filters,Client
 from pyrogram.types import Message, ChatMember, ChatPermissions
-from jarvis.bot.probot import bot
-from jarvis.bot.helper import adminofilter, extract_user, admin_check
-from jarvis.bot import USERNAME as UN
+from jarvis.plugins.bot.probot import bot
+from jarvis.plugins.bot.helper import adminofilter, extract_user, admin_check
+from jarvis.plugins.bot import USERNAME as UN
 admin_fliter = filters.create(
     func=adminofilter,
     name="adminfilter"

@@ -6,13 +6,13 @@
 
 
 from pyrogram.types import Message
-from jarvis.bot.probot import bot
-from jarvis.bot.plugins.admin import __doc__ as doc1
-from jarvis.bot.plugins.misc import __doc__ as doc2
-from jarvis.bot.plugins.devs import __doc__ as doc3
-from jarvis.bot.plugins.channel import __doc__ as doc4
-from jarvis.bot.plugins.essentials import __doc__ as doc5
-from jarvis.bot import USERNAME
+from jarvis.plugins.bot.probot import bot
+from jarvis.plugins.bot.plugins.admin import __doc__ as doc1
+from jarvis.plugins.bot.plugins.misc import __doc__ as doc2
+from jarvis.plugins.bot.plugins.devs import __doc__ as doc3
+from jarvis.plugins.bot.plugins.channel import __doc__ as doc4
+from jarvis.plugins.bot.plugins.essentials import __doc__ as doc5
+from jarvis.plugins.bot import USERNAME
 from pyrogram.types import (InlineQueryResultArticle, InputTextMessageContent,
                             InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery)
 

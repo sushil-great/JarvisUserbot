@@ -5,10 +5,10 @@
 # Everyone is permitted to copy and distribute verbatim copies of this license document, but changing it is not allowed.
 
 from pyrogram import Client, idle
-from jarvis.bot.var import vars
+from jarvis.plugins.bot.var import vars
 from pyrogram import __version__
 from pyrogram.raw.all import layer
-import jarvis.bot
+import jarvis.plugins.bot
 
 APP_ID = vars.APP_ID
 API_HASH = vars.API_HASH
@@ -24,7 +24,7 @@ class bot(Client):
         
         super().__init__(
                 ":memory:",
-                plugins=dict(root="jarvis/bot/plugins"),
+                plugins=dict(root="jarvis/plugins/bot/plugins"),
                 workdir=TMP_DIR,
                 api_id=APP_ID,
                 api_hash=API_HASH,

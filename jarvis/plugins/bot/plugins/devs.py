@@ -27,9 +27,9 @@ import re
 import traceback
 from contextlib import redirect_stdout
 from pyrogram import Client, filters
-from jarvis.bot.probot import bot
-from jarvis.bot import OWNER
-from jarvis.bot import USERNAME as UN 
+from jarvis.plugins.bot.probot import bot
+from jarvis.plugins.bot import OWNER
+from jarvis.plugins.bot import USERNAME as UN 
 
 @bot.on_message(filters.regex("^/run") & filters.user(f"{OWNER}") & ~filters.edited)
 async def eval(client, message):

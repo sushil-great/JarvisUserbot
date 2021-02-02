@@ -4,10 +4,10 @@
 # This file is a part of < https://github.com/sppidy/ProBot >
 # Everyone is permitted to copy and distribute verbatim copies of this license document, but changing it is not allowed.
 
-from jarvis.bot import version, botname
-from jarvis.bot import USERNAME as UN
+from jarvis.plugins.bot import version, botname
+from jarvis.plugins.bot import USERNAME as UN
 from pyrogram import filters
-from jarvis.bot.probot import bot
+from jarvis.plugins.bot.probot import bot
 from pyrogram.types import Message
 from pyrogram.types import (InlineQueryResultArticle, InputTextMessageContent,
                             InlineKeyboardMarkup, InlineKeyboardButton, InlineKeyboardButton)

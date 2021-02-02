@@ -13,7 +13,7 @@ Commands :-
 Will Add More Commands Soon
 """
 from pyrogram import filters
-from jarvis.bot.probot import bot
+from jarvis.plugins.bot.probot import bot
 
 @bot.on_message(filters.command('purge') & (filters.channel) & ~filters.edited)
 async def tryit(client,message):

@@ -41,7 +41,7 @@ import re
 import time
 import requests
 from pyrogram import Client, filters
-from jarvis.bot.probot import bot
+from jarvis.plugins.bot.probot import bot
 from pyrogram.types import Message
 from datetime import datetime
 from pyrogram.types import User
@@ -50,7 +50,8 @@ from pyrogram.errors import PeerIdInvalid
 from aiohttp import ClientSession
 from pyrogram.types import (InlineQueryResultArticle, InputTextMessageContent,
                             InlineKeyboardMarkup, InlineKeyboardButton, InlineKeyboardButton)
-from jarvis.bot import USERNAME as UN
+from jarvis.plugins.bot import USERNAME as 
+
 @bot.on_message(filters.regex('^/echo (?P<text>.+)') & ~filters.edited)
 async def on_echo(client, message):
     text = message.matches[0]['text']

@@ -4,7 +4,7 @@
 # This file is a part of < https://github.com/sppidy/ProBot >
 # Everyone is permitted to copy and distribute verbatim copies of this license document, but changing it is not allowed.
 
-from jarvis.bot.probot import bot
+from jarvis.plugins.bot.probot import bot
 
 if __name__ == "__main__":
   bot().run()

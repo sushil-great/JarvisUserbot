@@ -20,8 +20,8 @@ import html
 from googletrans import Translator, LANGUAGES
 from pyrogram import Client, filters
 from pyrogram.types import Message
-from jarvis.bot.helper import get_tr_lang
-from jarvis.bot.probot import bot
+from jarvis.plugins.bot.helper import get_tr_lang
+from jarvis.plugins.bot.probot import bot
 
 translator = Translator()
 
