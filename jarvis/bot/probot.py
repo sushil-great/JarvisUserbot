@@ -5,10 +5,10 @@
 # Everyone is permitted to copy and distribute verbatim copies of this license document, but changing it is not allowed.
 
 from pyrogram import Client, idle
-from bot.var import vars
+from jarvis.bot.var import vars
 from pyrogram import __version__
 from pyrogram.raw.all import layer
-from jarvis.bot import botname, copyright, version, license, LOGGER
+import jarvis.bot
 
 APP_ID = vars.APP_ID
 API_HASH = vars.API_HASH
