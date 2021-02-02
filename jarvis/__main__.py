@@ -51,7 +51,7 @@ else:
     sedprint.info("Userbot is Not Loading As U Have Disabled")
 
 if LOAD_ASSISTANT == True:
-    path = "jarvis/bot/plugins/*.py"
+    path = "jarvis/plugins/bot/plugins/*.py"
     files = glob.glob(path)
     for name in files:
         with open(name) as f:
