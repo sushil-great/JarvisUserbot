@@ -8,7 +8,7 @@ from pyrogram import Client, idle
 from bot.var import vars
 from pyrogram import __version__
 from pyrogram.raw.all import layer
-from bot import botname, copyright, version, license, LOGGER
+from jarvis.bot import botname, copyright, version, license, LOGGER
 
 APP_ID = vars.APP_ID
 API_HASH = vars.API_HASH
