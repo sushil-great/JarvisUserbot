@@ -49,17 +49,6 @@ if LOAD_USERBOT == True:
 else:
     sedprint.info("Userbot is Not Loading As U Have Disabled")
 
-if LOAD_ASSISTANT == True:
-    path = "jarvis/plugins/bot/plugins/*.py"
-    files = glob.glob(path)
-    for name in files:
-        with open(name) as f:
-            path1 = Path(f.name)
-            shortname = path1.stem
-            start_assistant(shortname.replace(".py", ""))
-else:
-    sedprint.info("Assitant is Not Loading As U Have Disabled")
-
 sedprint.info("JARVIS AI AND YOUR ASSISTANT is Active Enjoy Join @JarvisOT For Updates.")
 
 if len(argv) not in (1, 3, 4):
