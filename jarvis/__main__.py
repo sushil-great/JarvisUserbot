@@ -5,11 +5,10 @@ import telethon.utils
 from telethon import TelegramClient
 from jarvis.plugins.bot import probot
 from jarvis import jarvisub,sedprint
-from jarvis.utils import load_module, start_assistant
+from jarvis.utils import load_module
 from var import Var
 
 LOAD_USERBOT = os.environ.get("LOAD_USERBOT", True)
-LOAD_ASSISTANT = os.environ.get("LOAD_ASSISTANT", True)
 
 
 async def add_bot(bot_token):
