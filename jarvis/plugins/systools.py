@@ -42,6 +42,6 @@ async def _(event):
         f"Updated. `{CMD_HNDLR}ping` or `{CMD_HNDLR}help` to check if I am online",
     )
     await jarvis.disconnect()
-    os.execl(git pull)
+    os.system("git pull")
     os.execl(sys.executable, sys.executable, *sys.argv)
     quit()
