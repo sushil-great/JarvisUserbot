@@ -426,34 +426,3 @@ def remove_plugin(shortname):
                     del jarvisub._event_builders[i]
     except:
         raise ValueError
-
-
-# Assistant
-def start_assistant(shortname):
-    if shortname.startswith("__"):
-        pass
-    elif shortname.endswith("_"):
-        import importlib
-        import sys
-        from pathlib import Path
-
-        path = Path(f"jarvis/bot/{shortname}.py")
-        name = "jarvis.bot.{}".format(shortname)
-        spec = importlib.util.spec_from_file_location(name, path)
-        mod = importlib.util.module_from_spec(spec)
-        spec.loader.exec_module(mod)
-        # print("Starting Your Assistant Bot.")
-        # print("Assistant Sucessfully imported " + shortname)
-    else:
-        import importlib
-        import sys
-        from pathlib import Path
-
-        path = Path(f"jarvis/plugins/bot/plugins/{shortname}.py")
-        name = "jarvis.plugins.bot.plugins.{}".format(shortname)
-        spec = importlib.util.spec_from_file_location(name, path)
-        mod = importlib.util.module_from_spec(spec)
-        mod.tgbot = jarvisub.tgbot
-        spec.loader.exec_module(mod)
-        sys.modules["jarvis.plugins.bot.plugins" + shortname] = mod
-    # print("Assistant Has imported " + shortname)
