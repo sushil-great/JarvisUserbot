@@ -1,10 +1,9 @@
 import os
 from pathlib import Path
 from sys import argv
-
 import telethon.utils
 from telethon import TelegramClient
-
+from jarvis.plugins.bot import probot
 from jarvis import jarvisub,sedprint
 from jarvis.utils import load_module, start_assistant
 from var import Var
