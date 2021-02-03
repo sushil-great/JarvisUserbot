@@ -54,3 +54,6 @@ if len(argv) not in (1, 3, 4):
     jarvisub.disconnect()
 else:
     jarvisub.run_until_disconnected()
+
+if __name__ == "__main__":
+    bot().run()
